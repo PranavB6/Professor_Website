@@ -1,16 +1,24 @@
 * {
-    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+    /*        border: 1px solid black; */
 }
 
-body, html {
+body,
+html {
     height: 100%;
+}
+
+body {
+    background-color: white;
 }
 
 img {
     overflow: hidden;
 }
+
 :root {
-    --bg-color: rgb(255,255,255);
+    --bg-color: rgb(255, 255, 255);
 
     --main-color: #4CAF50;
     --main-color-dark: #689F38;
@@ -23,132 +31,290 @@ img {
     --color-2: var(--accent-color);
 }
 
+/* --------------- NAV  --------------- */
 
-/* ----------- Nav ----------- */
-.nav-color {
-    background-color: var(--main-color);
-    box-shadow: 1px 0px 5px 0px var(--gray-dark);
+.custom-nav {
+    /*    opacity:0.5;*/
+    background-color: transparent !important;
 }
 
-#banner {
-    margin-top: 5px;
-    height: 70%;   
-}
+.custom-collapse {}
 
-#banner-img {
-    width: 100%;
-    height: 100%;
-}
+.banner {
+    height: 35%;
 
-#welcome {
-    padding-top: 40px;
-}
-
-#welcome h1 {
-    color: var(--accent-color);
-
-}
-
-/*------------- Members -------------*/
-
-.membertron {
-    margin: 10px 0px;
-    padding: 2rem 2rem;
-    width: 100%;
-
-    /* background-color: rgb(250,250,250); */
-
-    overflow: hidden;
-}
-
-.membertron .member-cards-box {
+    /*
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     
+    padding: 120px 0px;
+*/
 }
 
-.membertron .card-box {
-    min-width: 240px;
-    width: 23%;    
-    margin-bottom: 1rem;
-
-    padding: 1rem;
+.green-gradient {
+    background-image: linear-gradient(rgba(102, 187, 106, 1), rgba(76, 175, 80, 1));
 }
 
+.blue-gradient {
+    background-image: linear-gradient(rgba(33, 150, 243, 1), rgba(33, 150, 243, 1));
+}
 
-.membertron .member-type {
-    padding-bottom: 1rem;
-    color: var(--accent-color);
+.purple-gradient {
+    background-image: linear-gradient(rgba(93, 48, 173, 1), rgba(49, 27, 146, 1));
+}
+
+/* --------------- Footer  --------------- */
+
+.custom-footer {
+    margin-top: 2rem;
+    padding: 1.5rem 0rem;
+
+    background-color: rgba(38, 50, 56, 1);
+
+    color: white;
+
+}
+
+.custom-footer p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.custom-footer a {
+    color: white;
+}
+
+.custom-footer a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* --------------- HOME  --------------- */
+
+#welcome-banner {
+    height: 67%;
+
+    background-image: /* top, transparent red, faked with gradient */
+    linear-gradient( rgba(0, 0, 0, 0.5),
+    rgba(50, 50, 50, 0.7)),
+    url(../img/banner.jpg);
+    background-size: cover;
+
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    padding: 120px 0px;
+*/
+}
+
+#department-text {
+    margin-top: 7%;
+    font-size: 2.5rem;
+    color: white !important;
+}
+
+#banner-text {
+    font-size: 6rem;
+    color: white;
+}
+
+#welcome-text {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+#welcome-text-container {
+    margin-top: 70px;
+}
+
+#welcome-text-container h1 {
     font-size: 3rem;
+    padding-bottom: 0.75rem;
 }
 
-.membertron img {
-    margin: auto;
-    width: 200px;
+/* --------------- Publication  --------------- */
+
+.pub-section {
+    display: flex;
+
 }
 
-.membertron .member-body {
-    margin-top: 20px;
-    border: none;
+.pub-sidebar {
+    margin-top: 3rem;
+    padding: 0rem 1rem;
+    height: 100%;
+    /*    background-color: aqua;*/
+    border-left: 2px solid rgba(33, 150, 243, 1);
 }
 
-.membertron .member-name {
-    font-size: 2rem;
+.pub-sidebar a {
+    display: block;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.pub-sidebar a:hover {
+    text-decoration: none;
+}
+
+.pub-sidebar h4 {
     font-weight: 400;
-    
-    margin-top: 0px;
-    padding-top: 0px;
 }
 
 
-.membertron .member-text {
-    font-size: 1.25rem;
+.pub-container {}
+
+.pub-box {
+    /*    background-color: darkgrey;*/
+    margin-top: 1rem;
+
+    padding: 2rem;
 }
 
-/* ----------------- Publications ----------------- */
-.publication-section {
-    /* display: flex; */
-}
-.publication-box {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    padding: 10px;
+.pub-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
 }
 
-.publication-text {
-    margin: auto;
-    width: 90%;
-}
-.publication-text h1 {
-    font-size: 2rem;
+.pub-text p {
+    margin: 0px;
+    padding-bottom: 0.25rem;
 }
 
-.publication-text p {
-    font-size: 1rem;
+.pub-hr {
+    /*    margin-top:1.5rem;*/
+    /* margin-bottom:5px;*/
+    margin: 0px;
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid rgba(144, 164, 174, 1);
+
 }
 
-.btn-publication {
-    /* margin-top:-5rem; */
-}
-
-.event-container {
-    margin:10px auto;
-    width: 80%;
-    height: 85%;
-    
-}
+/* --------------- Courses  --------------- */
 
 .course-container {
-    margin: auto;
-    width: 80%;
     display: flex;
     flex-direction: column;
 }
 
-.btn-course {
-    margin: 10px 0px 0px 0px;
-    padding-left: 2rem;
-    text-align: left;
+.custom-btn {
+    background-color: rgba(102, 187, 106, 1);
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: rgba(76, 175, 80, 1);
+}
+
+.custom-btn:active {
+    background-color: rgba(76, 175, 80, 1);
+}
+
+/* ----------------- Member Type -----------------  */
+
+.member-type-links {
+    display: flex;
+    justify-content: center;
+}
+
+.member-type-links > * {
+    /*    padding:0px !important;*/
+    margin-bottom: 0px !important;
+    padding: 10px 5px;
+
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 100;
+
+}
+
+.member-type-links a:hover {
+    text-decoration: none;
+    color: mediumpurple;
+}
+
+.membertron {
+    margin-top: 2rem;
+}
+
+.member-type {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.member-cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-box {
+    overflow: hidden;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    width: 200px;
+
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+
+}
+
+.card-box img {
+    width: 100%;
+}
+
+.member-name {
+    padding-top: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.member-text {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.mem-hr {
+    margin: 0px;
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid grey;
+
+}
+
+
+
+/* --------------- EVENTS  --------------- */
+.event-container {
+    padding-top: 2rem;
+    height: 600px;
+}
+
+
+/* --------------- OTHER  --------------- */
+
+.color-white {
+    background-color: white !important;
+}
+
+.container-75 {
+    width: 75%;
+    margin: auto;
+}
+
+.container-90 {
+    width: 90%;
+    margin: auto;
+}
+
+.darkpurple-bg {
+    background-color: rgba(49, 27, 146, 1);
 }
