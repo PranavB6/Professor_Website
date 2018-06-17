@@ -18,47 +18,55 @@
 </head>
 
 <body>
-    <div class="banner purple-gradient">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light custom-nav">
-            <a class="navbar-brand" href="#"> University of Alberta</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
+        <a class="navbar-brand flex-center" href="#"> <img class="nav-logo" src="img/logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"> </span>
   </button>
 
-            <div class="collapse navbar-collapse custom-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse custom-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="publications.html">Publications</a>
-                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Publications </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="journals.html">Journals</a>
+                        <a class="dropdown-item" href="conferences.html">Conferences</a>
+                    </div>
+                </li>
+                
+                     <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="courses.html">Courses</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="members.html">Members</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="members.html">Members</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="workspace.html">Workspace</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+           
+            </ul>
+        </div>
+    </nav>
 
-
-        <div class="container-90">
+    <div class="banner purple-gradient">
+        <div class="container-90 flex-center">
             <!--            <h2 class="display-4 text-muted text-center" id="department-text"> Department Of Computing Science </h2>-->
-            <h1 class="display-2 text-center" id="banner-text"> Members </h1>
+            <div>
+                <h1 class="banner-text"> Members </h1>
+            </div>
         </div>
     </div>
 
@@ -75,225 +83,246 @@
     <section class="container-75">
         <div class="membertron">
             <h1 class="display-3 member-type"> Faculty </h1>
+            <hr class="mem-hr">
+            <br>
 
             <div class="member-cards-box">
 
-                <div class="card card-box">
-                    <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                <div class="card borderless card-box">
+                    <img src="img/faculty/elmallah.png">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Ehab Elmallah </h2>
-                        <p class="display-4 member-text"> Really really long long Email </p>
-                        <a href="#" class="btn btn-success full-width"> More Info </a>
+                        <p class="display-4 member-text"> Professor </p>
+                     
+                        <p class="display-4 member-text"> ehab@cs.ualberta.ca </p>
+                        <a href="https://www.ualberta.ca/science/about-us/contact-us/faculty-directory/ehab-elmallah" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
 
-                <div class="card card-box">
-                    <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                <div class="card borderless card-box">
+                    <img src="img/faculty/nikolaidis.jpeg">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Ioanis Nikolaidis </h2>
-                        <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <p class="display-4 member-text"> Professor </p>
+             
+                        <p class="display-4 member-text"> nikolaidis@ualberta.ca </p>
+                        <a href="https://www.ualberta.ca/science/about-us/contact-us/faculty-directory/ioanis-nikolaidis" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
-                    <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                <div class="card borderless card-box">
+                    <img src="img/faculty/harms.jpg">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Janelle Harms </h2>
-                        <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <p class="display-4 member-text"> Professor </p>
+                  
+                        <p class="display-4 member-text"> janelleh@ualberta.ca </p>
+                        <a href="https://www.ualberta.ca/science/about-us/contact-us/faculty-directory/janelle-harms" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
-                    <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                <div class="card borderless card-box">
+                    <img src="img/faculty/macgregor.jpg">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Mike MacGregor </h2>
-                        <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <p class="display-4 member-text"> Professor, VPIT & Director of MINT </p>
+             
+                        <p class="display-4 member-text"> mike.macgregor@ualberta.ca </p>
+                        <a href="https://www.ualberta.ca/science/about-us/contact-us/faculty-directory/mike-macgregor" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
+                    <img src="img/faculty/ardakanian.jpg">
+                    <div class="card borderless member-body">
+                        <h2 class="display-4 member-name"> Omid Ardakanian </h2>
+                        <p class="display-4 member-text"> Assistant Professor </p>
+               
+                        <p class="display-4 member-text"> ardakanian@ualberta.ca </p>
+                        <a href="https://www.ualberta.ca/science/about-us/contact-us/faculty-directory/omid-ardakanian" class="btn btn-purple"> More Info </a>
+                    </div>
+                </div>
+
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Pawel Gburzynski </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <hr class="mem-hr">
         
+
         <div class="membertron">
             <h1 class="display-3 member-type"> Graduate Students </h1>
             <div class="member-cards-box">
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Abdullah-Al Mahmood </h2>
                         <p class="display-4 member-text"> abdullah@email.com </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Baljeet Malhotra </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Chen Liu </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Israat Tanzeena Haque </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Jeremy Nickurak </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Jinhui Shen </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Kevin Andrusky </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Khaled Ammar </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Nicholas Boers </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Qinghua Ye </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Shoudong Zou </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Sunil Ravinder </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Yu Sheng </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
             </div>
         </div>
 
         <hr class="mem-hr">
-        
+
         <div class="membertron">
             <h1 class="display-3 member-type"> Professors </h1>
 
             <div class="member-cards-box">
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Sunil Ravinder </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Sunil Ravinder </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Sunil Ravinder </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
 
-                <div class="card card-box">
+                <div class="card borderless card-box">
                     <img src="img/face.jpeg">
-                    <div class="card body member-body">
+                    <div class="card borderless member-body">
                         <h2 class="display-4 member-name"> Sunil Ravinder </h2>
                         <p class="display-4 member-text"> Email </p>
-                        <a href="#" class="btn btn-success"> More Info </a>
+                        <a href="#" class="btn btn-purple"> More Info </a>
                     </div>
                 </div>
             </div>
