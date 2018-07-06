@@ -94,6 +94,13 @@
     /*    padding: 10em !important;*/
 }
 
+.custom-pub-icon {
+    height: 2em;
+}
+
+.custom-pub-icon-link {
+    border: none;
+}
 /* Header */
 
 .custom-header {
@@ -117,9 +124,30 @@
     float:right;
     margin-left: 0.5em;
     height: 25px !important;
-
 }
 
+.custom-sm-btm-space {
+    margin-bottom: 0.5em;
+}
+
+.custom-project-img-1 {
+    float:left !important;
+    width: 25em;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.custom-project-img-2 {
+    width: 100%;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.custom-page-ending {
+    background: linear-gradient(var(--main-color), #e75656);
+    width:100%;
+    height: 6em;
+}
 
 /* ------------------- Arrow ---------------------- */
 
