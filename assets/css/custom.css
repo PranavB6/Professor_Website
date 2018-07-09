@@ -19,7 +19,7 @@
 
 .news-icon {
     width: 5em;
-    margin-right: 1em;
+    margin-right: 1.5em;
     
 }
 
@@ -94,6 +94,14 @@
     font-weight: 900 !important;
     margin-bottom: 0.25em !important;
     
+}
+
+.full-width {
+    width: 100%;
+}
+
+.space-above {
+    margin-top: 1em;
 }
 
 /* Courses  */
