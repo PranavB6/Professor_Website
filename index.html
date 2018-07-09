@@ -10,8 +10,12 @@
     <title> Home </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <script src="assets/js/bootstrap_jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
 </head>
 
 <body class="is-preload">
@@ -61,46 +65,62 @@
                 <!-- Section -->
                 <section>
                     <header class="major">
-                        <h2>Erat lacinia</h2>
+                        <h2>Recent News</h2>
                     </header>
-                    <div class="features">
+                    <div class="news">
                         <article>
-                            <span> <img width="80%" src="images/bullet_icon.png"> </span>
+                            <span> <img class="news-icon" src="images/bullet_icon.png"> </span>
                             <div class="content">
                                 <h3>Portitor ullamcorper</h3>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                             </div>
                         </article>
                         <article>
-                            <span class="icon fa-paper-plane"></span>
+                            <span> <img class="news-icon" src="images/bullet_icon.png"> </span>
                             <div class="content">
                                 <h3>Sapien veroeros</h3>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                             </div>
                         </article>
                         <article>
-                            <span class="icon fa-rocket"></span>
+                            <span> <img class="news-icon" src="images/bullet_icon.png"> </span>
                             <div class="content">
                                 <h3>Quam lorem ipsum</h3>
                                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
                             </div>
                         </article>
-                        <article>
-                            <span class="icon fa-signal"></span>
-                            <div class="content">
-                                <h3>Sed magna finibus</h3>
-                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            </div>
-                        </article>
 
-                        <article>
-                            <span class="icon fa-signal"></span>
-                            <div class="content">
-                                <h3>Sed magna finibus</h3>
-                                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                            </div>
-                        </article>
 
+
+                        <div class="collapse" id="more-news">
+                            <article>
+                                <span> <img class="news-icon" src="images/bullet_icon.png"> </span>
+                                <div class="content">
+                                    <h3>Portitor ullamcorper</h3>
+                                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <span> <img class="news-icon" src="images/bullet_icon.png"> </span>
+                                <div class="content">
+                                    <h3>Sapien veroeros</h3>
+                                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                </div>
+                            </article>
+                            <article>
+                                <span> <img class="news-icon" src="images/bullet_icon.png"> </span>
+                                <div class="content">
+                                    <h3>Quam lorem ipsum</h3>
+                                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <button class=" primary custom-btn" type="button" data-toggle="collapse" data-target="#more-news" aria-expanded="false" aria-controls="more-news">
+            <span class="collapsed custom-width-med">More <i class="arrow down"></i>  </span>
+                             <span class="expanded custom-width-med"> Less <i class="arrow up"></i>  </span>
+        </button>
                     </div>
                 </section>
 

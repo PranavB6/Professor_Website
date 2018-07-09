@@ -6,6 +6,23 @@
     --main-color: #f56a6a;
 }
 
+.news article {
+    display: flex;
+    margin-bottom: 2em;
+    
+    border-bottom: 1px solid #bab8bb;
+}
+
+.news article h3 {
+    margin-bottom: 0;
+}
+
+.news-icon {
+    width: 5em;
+    margin-right: 1em;
+    
+}
+
 .custom-disabled-nav-link {
     color: #909aa2 !important;    
 }
@@ -189,3 +206,10 @@ i {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}
+
