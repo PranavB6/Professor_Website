@@ -23,6 +23,7 @@
 }
 
 /* ----------- NEWS ----------- */
+
 .news article {
     display: flex;
     margin-bottom: 2em;
@@ -47,14 +48,14 @@
 }
 
 .custom-mem-txt p {
-    margin-bottom: 0.25em !important;
+    margin-bottom: 0.25em;
 
 }
 
 .custom-email {
     display: block;
-    border: none !important;
-    margin-bottom: 2em !important;
+    border: none;
+    margin-bottom: 2em;
 }
 
 .custom-mem-box {
@@ -78,17 +79,12 @@
 }
 
 .custom-former-graduate-box {
-/*    border-radius: 1em;*/
-/*    padding: 1em;*/
-/*    background-color: #FAFAFA;*/
-/*    border-bottom: 1px solid #BDBDBD;*/
     
 }
 
 .custom-former-graduate-box h3 {
     font-weight: 900;
-    margin-bottom: 0.25em;
-    
+    margin-bottom: 0.25em;    
 }
 
 
@@ -109,8 +105,20 @@
     margin-bottom: 0.5em;
 }
 
-.custom-pub-icon {
-    height: 2em;
+[href$=".pdf"], [href$=".bib"], [href$=".ppt"] {
+ border: none;
+}
+
+[href$=".pdf"]::after {    
+  content: url('../../images/pdf_icon_small.png');
+}
+
+[href$=".bib"]::after {    
+  content: url('../../images/bib_icon_small.png');
+}
+
+[href$=".ppt"]::after {    
+  content: url('../../images/powerpoint_icon_small.png');
 }
 
 
@@ -214,4 +222,7 @@ i {
 
   display: none;
 }
+
+
+
 
